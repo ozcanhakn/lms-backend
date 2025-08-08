@@ -71,7 +71,7 @@ Spring Boot ile geliştirilmiş, gelişmiş RBAC (Rol Tabanlı Erişim Kontrolü
 
 ### 1. Depoyu Klonlayın
 ```bash
-git clone [<repository-url>](https://github.com/ozcanhakn/lms-backend)
+git clone https://github.com/ozcanhakn/lms-backend
 cd lms-backend
 ```
 
