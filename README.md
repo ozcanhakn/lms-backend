@@ -1,92 +1,92 @@
-# LMS Backend - Learning Management System
+# LMS Backend - Öğrenme Yönetim Sistemi
 
 **Aday:** Münür Hakan Özcan  
 **Teslim Tarihi:** 08.08.2025
 
-A comprehensive Learning Management System backend built with Spring Boot, featuring advanced RBAC (Role-Based Access Control), comprehensive audit logging, and robust security features.
+Spring Boot ile geliştirilmiş, gelişmiş RBAC (Rol Tabanlı Erişim Kontrolü), kapsamlı denetim günlüğü ve güçlü güvenlik özellikleri içeren kapsamlı bir Öğrenme Yönetim Sistemi backend'i.
 
-## 🚀 Features
+## 🚀 Özellikler
 
-### Core Features
-- **User Management**: Complete user lifecycle management with profile types (Super Admin, Teacher, Student)
-- **Organization Management**: Multi-tenant support with organization and brand hierarchy
-- **Classroom Management**: Classroom creation and assignment management
-- **Course Management**: Course creation and assignment to classrooms
-- **JWT Authentication**: Secure token-based authentication with refresh tokens
+### Temel Özellikler
+- **Kullanıcı Yönetimi**: Profil türleri (Süper Admin, Öğretmen, Öğrenci) ile tam kullanıcı yaşam döngüsü yönetimi
+- **Organizasyon Yönetimi**: Organizasyon ve marka hiyerarşisi ile çok kiracılı destek
+- **Sınıf Yönetimi**: Sınıf oluşturma ve atama yönetimi
+- **Kurs Yönetimi**: Kurs oluşturma ve sınıflara atama
+- **JWT Kimlik Doğrulama**: Yenileme token'ları ile güvenli token tabanlı kimlik doğrulama
 
-### 🔐 Advanced Security Features
+### 🔐 Gelişmiş Güvenlik Özellikleri
 
-#### Role-Based Access Control (RBAC)
-- **Flexible Permission System**: Granular permissions with resource-action pairs
-- **Role Management**: Create, update, and manage roles with specific permissions
-- **User Role Assignment**: Assign multiple roles to users with audit trail
-- **Permission Checking**: Real-time permission validation for API endpoints
-- **Backward Compatibility**: Maintains legacy role system while adding advanced RBAC
+#### Rol Tabanlı Erişim Kontrolü (RBAC)
+- **Esnek İzin Sistemi**: Kaynak-eylem çiftleri ile granüler izinler
+- **Rol Yönetimi**: Belirli izinlerle rol oluşturma, güncelleme ve yönetimi
+- **Kullanıcı Rol Ataması**: Denetim izi ile kullanıcılara birden fazla rol atama
+- **İzin Kontrolü**: API endpoint'leri için gerçek zamanlı izin doğrulama
+- **Geriye Uyumluluk**: Gelişmiş RBAC eklerken eski rol sistemini korur
 
-#### Login Attempt Throttling (Rate Limiting)
-- **Email-based Rate Limiting**: Configurable limits per email address
-- **IP-based Rate Limiting**: Additional protection against brute force attacks
-- **Bucket4j Integration**: Efficient token bucket algorithm implementation
-- **Configurable Windows**: Adjustable time windows for rate limiting
-- **Attempt Tracking**: Comprehensive logging of all login attempts
+#### Giriş Denemesi Kısıtlama (Hız Sınırlama)
+- **E-posta Tabanlı Hız Sınırlama**: E-posta adresi başına yapılandırılabilir limitler
+- **IP Tabanlı Hız Sınırlama**: Brute force saldırılarına karşı ek koruma
+- **Bucket4j Entegrasyonu**: Verimli token bucket algoritması uygulaması
+- **Yapılandırılabilir Pencereler**: Hız sınırlama için ayarlanabilir zaman pencereleri
+- **Deneme Takibi**: Tüm giriş denemelerinin kapsamlı günlüğü
 
-#### Audit Logging System
-- **Comprehensive Activity Tracking**: Log all user actions with detailed context
-- **AOP-based Logging**: Automatic method-level audit logging with custom annotations
-- **Rich Metadata**: IP addresses, user agents, timestamps, and operation details
-- **Flexible Queries**: Search and filter audit logs by user, resource, action, or time range
-- **Performance Monitoring**: Track method execution times and success/failure rates
+#### Denetim Günlüğü Sistemi
+- **Kapsamlı Aktivite Takibi**: Detaylı bağlam ile tüm kullanıcı eylemlerini günlüğe kaydetme
+- **AOP Tabanlı Günlükleme**: Özel açıklamalarla otomatik metod seviyesi denetim günlüğü
+- **Zengin Meta Veri**: IP adresleri, kullanıcı ajanları, zaman damgaları ve işlem detayları
+- **Esnek Sorgular**: Kullanıcı, kaynak, eylem veya zaman aralığına göre denetim günlüklerini arama ve filtreleme
+- **Performans İzleme**: Metod yürütme sürelerini ve başarı/başarısızlık oranlarını takip etme
 
-### 📊 Testing & Quality
+### 📊 Test ve Kalite
 
-#### Unit Test Coverage (>80%)
-- **Comprehensive Service Tests**: Full coverage of business logic
-- **Repository Layer Testing**: Database operation testing with TestContainers
-- **Security Testing**: Authentication and authorization test coverage
-- **Mock-based Testing**: Efficient unit testing with Mockito
-- **Integration Tests**: End-to-end testing with real database
+#### Birim Test Kapsamı (>%80)
+- **Kapsamlı Servis Testleri**: İş mantığının tam kapsamı
+- **Repository Katmanı Testleri**: TestContainers ile veritabanı işlem testleri
+- **Güvenlik Testleri**: Kimlik doğrulama ve yetkilendirme test kapsamı
+- **Mock Tabanlı Testler**: Mockito ile verimli birim testleri
+- **Entegrasyon Testleri**: Gerçek veritabanı ile uçtan uca testler
 
-### 🛠 Technical Stack
+### 🛠 Teknik Altyapı
 
-- **Java 21**: Latest LTS version with modern language features
-- **Spring Boot 3.5.4**: Latest stable version with Spring Security 6
-- **Spring Security**: Advanced security with JWT and RBAC
-- **Spring Data JPA**: Database abstraction with Hibernate
-- **PostgreSQL**: Primary database with UUID primary keys
-- **Redis**: Caching and session management
-- **Docker**: Containerization support
-- **Maven**: Build and dependency management
-- **Lombok**: Reduced boilerplate code
-- **Swagger/OpenAPI**: API documentation
+- **Java 21**: Modern dil özellikleri ile en son LTS sürümü
+- **Spring Boot 3.5.4**: Spring Security 6 ile en son kararlı sürüm
+- **Spring Security**: JWT ve RBAC ile gelişmiş güvenlik
+- **Spring Data JPA**: Hibernate ile veritabanı soyutlaması
+- **PostgreSQL**: UUID birincil anahtarları ile birincil veritabanı
+- **Redis**: Önbellekleme ve oturum yönetimi
+- **Docker**: Konteynerleştirme desteği
+- **Maven**: Derleme ve bağımlılık yönetimi
+- **Lombok**: Azaltılmış boilerplate kodu
+- **Swagger/OpenAPI**: API dokümantasyonu
 
-## 📋 Prerequisites
+## 📋 Ön Gereksinimler
 
-- Java 21 or higher
+- Java 21 veya üzeri
 - Maven 3.6+
 - PostgreSQL 12+
 - Redis 6+
-- Docker (optional)
+- Docker (isteğe bağlı)
 
-## 🚀 Quick Start
+## 🚀 Hızlı Başlangıç
 
-### 1. Clone the Repository
+### 1. Depoyu Klonlayın
 ```bash
 git clone <repository-url>
 cd lms-backend
 ```
 
-### 2. Database Setup
+### 2. Veritabanı Kurulumu
 ```sql
--- Create database
+-- Veritabanı oluştur
 CREATE DATABASE lms_backend;
 
--- Create user (optional)
+-- Kullanıcı oluştur (isteğe bağlı)
 CREATE USER lms_user WITH PASSWORD 'your_password';
 GRANT ALL PRIVILEGES ON DATABASE lms_backend TO lms_user;
 ```
 
-### 3. Configuration
-Create `application.yml` in `src/main/resources/`:
+### 3. Yapılandırma
+`src/main/resources/` içinde `application.yml` oluşturun:
 
 ```yaml
 spring:
@@ -108,13 +108,13 @@ spring:
   redis:
     host: localhost
     port: 6379
-    password: # if required
+    password: # gerekirse
 
   security:
     jwt:
       secret: your-super-secret-jwt-key-here-make-it-long-and-secure
-      expiration: 86400000 # 24 hours
-      refresh-expiration: 604800000 # 7 days
+      expiration: 86400000 # 24 saat
+      refresh-expiration: 604800000 # 7 gün
 
 lms:
   rate-limit:
@@ -131,23 +131,23 @@ logging:
     org.springframework.security: DEBUG
 ```
 
-### 4. Run the Application
+### 4. Uygulamayı Çalıştırın
 ```bash
-# Using Maven
+# Maven kullanarak
 mvn spring-boot:run
 
-# Using Docker
+# Docker kullanarak
 docker-compose up -d
 ```
 
-### 5. Access the Application
-- **API Base URL**: http://localhost:8080
+### 5. Uygulamaya Erişin
+- **API Temel URL**: http://localhost:8080
 - **Swagger UI**: http://localhost:8080/swagger-ui.html
-- **Health Check**: http://localhost:8080/actuator/health
+- **Sağlık Kontrolü**: http://localhost:8080/actuator/health
 
-### 6. Example Users
+### 6. Örnek Kullanıcılar
 
-#### SuperAdmin User
+#### Süper Admin Kullanıcısı
 ```json
 {
   "email": "admin@lms.com",
@@ -158,7 +158,7 @@ docker-compose up -d
 }
 ```
 
-#### Teacher User
+#### Öğretmen Kullanıcısı
 ```json
 {
   "email": "teacher@lms.com",
@@ -170,7 +170,7 @@ docker-compose up -d
 }
 ```
 
-#### Student User
+#### Öğrenci Kullanıcısı
 ```json
 {
   "email": "student@lms.com",
@@ -183,221 +183,219 @@ docker-compose up -d
 }
 ```
 
-## 📚 API Documentation
+## 📚 API Dokümantasyonu
 
-### Authentication Endpoints
-- `POST /api/v1/auth/login` - User login
-- `POST /api/v1/auth/refresh-token` - Refresh JWT token
-- `POST /api/v1/auth/register` - User registration (optional)
-- `POST /api/v1/auth/logout` - User logout (optional)
+### Kimlik Doğrulama Endpoint'leri
+- `POST /api/v1/auth/login` - Kullanıcı girişi
+- `POST /api/v1/auth/refresh-token` - JWT token'ını yenileme
+- `POST /api/v1/auth/register` - Kullanıcı kaydı (isteğe bağlı)
+- `POST /api/v1/auth/logout` - Kullanıcı çıkışı (isteğe bağlı)
 
-### SuperAdmin Endpoints
-- `POST /api/v1/brands` - Create new brand
-- `GET /api/v1/brands` - Get all brands
-- `PUT /api/v1/brands/{id}` - Update brand
-- `DELETE /api/v1/brands/{id}` - Delete brand
-- `POST /api/v1/organizations` - Create new organization
-- `GET /api/v1/organizations` - Get all organizations
-- `POST /api/v1/users` - Create new user (profile_id: 1 or 2)
-- `GET /api/v1/users` - Get all users
-- `POST /api/v1/classrooms` - Create new classroom
-- `POST /api/v1/courses` - Create new course
-- `POST /api/v1/courses/assign` - Assign course to classroom
-- `POST /api/v1/teachers/assign-classroom` - Assign teacher to classroom
+### Süper Admin Endpoint'leri
+- `POST /api/v1/brands` - Yeni marka oluştur
+- `GET /api/v1/brands` - Tüm markaları al
+- `PUT /api/v1/brands/{id}` - Marka güncelle
+- `DELETE /api/v1/brands/{id}` - Marka sil
+- `POST /api/v1/organizations` - Yeni organizasyon oluştur
+- `GET /api/v1/organizations` - Tüm organizasyonları al
+- `POST /api/v1/users` - Yeni kullanıcı oluştur (profile_id: 1 veya 2)
+- `GET /api/v1/users` - Tüm kullanıcıları al
+- `POST /api/v1/classrooms` - Yeni sınıf oluştur
+- `POST /api/v1/courses` - Yeni kurs oluştur
+- `POST /api/v1/courses/assign` - Kursu sınıfa ata
+- `POST /api/v1/teachers/assign-classroom` - Öğretmeni sınıfa ata
 
-### Teacher Endpoints
-- `GET /api/v1/teachers/my-classes` - Get teacher's assigned classrooms
-- `GET /api/v1/teachers/my-students` - Get students in teacher's classrooms
-- `GET /api/v1/teachers/my-courses` - Get courses in teacher's classrooms
+### Öğretmen Endpoint'leri
+- `GET /api/v1/teachers/my-classes` - Öğretmenin atandığı sınıfları al
+- `GET /api/v1/teachers/my-students` - Öğretmenin sınıflarındaki öğrencileri al
+- `GET /api/v1/teachers/my-courses` - Öğretmenin sınıflarındaki kursları al
 
-### Student Endpoints
-- `GET /api/v1/students/my-courses` - Get student's assigned courses
+### Öğrenci Endpoint'leri
+- `GET /api/v1/students/my-courses` - Öğrencinin atandığı kursları al
 
-### RBAC Management (Advanced Features)
-- `GET /api/rbac/roles` - Get all roles
-- `POST /api/rbac/roles` - Create new role
-- `PUT /api/rbac/roles/{id}` - Update role
-- `DELETE /api/rbac/roles/{id}` - Delete role
-- `GET /api/rbac/permissions` - Get all permissions
-- `POST /api/rbac/permissions` - Create new permission
-- `POST /api/rbac/users/{userId}/roles` - Assign role to user
-- `DELETE /api/rbac/users/{userId}/roles/{roleId}` - Remove role from user
+### RBAC Yönetimi (Gelişmiş Özellikler)
+- `GET /api/rbac/roles` - Tüm rolleri al
+- `POST /api/rbac/roles` - Yeni rol oluştur
+- `PUT /api/rbac/roles/{id}` - Rol güncelle
+- `DELETE /api/rbac/roles/{id}` - Rol sil
+- `GET /api/rbac/permissions` - Tüm izinleri al
+- `POST /api/rbac/permissions` - Yeni izin oluştur
+- `POST /api/rbac/users/{userId}/roles` - Kullanıcıya rol ata
+- `DELETE /api/rbac/users/{userId}/roles/{roleId}` - Kullanıcıdan rol kaldır
 
-### Audit Logs
-- `GET /api/audit/users/{userId}` - Get user activity
-- `GET /api/audit/resources/{type}/{id}` - Get resource activity
-- `GET /api/audit/actions/{action}` - Get activity by action
-- `GET /api/audit/timerange` - Get activity by time range
+### Denetim Günlükleri
+- `GET /api/audit/users/{userId}` - Kullanıcı aktivitesini al
+- `GET /api/audit/resources/{type}/{id}` - Kaynak aktivitesini al
+- `GET /api/audit/actions/{action}` - Eyleme göre aktiviteyi al
+- `GET /api/audit/timerange` - Zaman aralığına göre aktiviteyi al
 
-### Rate Limiting
-- `GET /api/rate-limit/attempts/email/{email}` - Get login attempts by email
-- `GET /api/rate-limit/attempts/ip/{ip}` - Get login attempts by IP
-- `POST /api/rate-limit/clear` - Clear rate limit buckets
+### Hız Sınırlama
+- `GET /api/rate-limit/attempts/email/{email}` - E-posta ile giriş denemelerini al
+- `GET /api/rate-limit/attempts/ip/{ip}` - IP ile giriş denemelerini al
+- `POST /api/rate-limit/clear` - Hız sınırlama bucket'larını temizle
 
-## 🔧 Development
+## 🔧 Geliştirme
 
-### Running Tests
+### Testleri Çalıştırma
 ```bash
-# Run all tests
+# Tüm testleri çalıştır
 mvn test
 
-# Run tests with coverage report
+# Kapsam raporu ile testleri çalıştır
 mvn test jacoco:report
 
-# Run specific test class
+# Belirli test sınıfını çalıştır
 mvn test -Dtest=AuditServiceTest
 
-# Run integration tests
+# Entegrasyon testlerini çalıştır
 mvn test -Dtest=*IntegrationTest
 ```
 
-### Code Quality
+### Kod Kalitesi
 ```bash
-# Check code style
+# Kod stilini kontrol et
 mvn checkstyle:check
 
-# Run SonarQube analysis
+# SonarQube analizi çalıştır
 mvn sonar:sonar
 ```
 
-### Database Migrations
-The application uses Hibernate's `ddl-auto: update` for automatic schema management. For production, consider using Flyway or Liquibase for proper migration management.
+### Veritabanı Migrasyonları
+Uygulama otomatik şema yönetimi için Hibernate'in `ddl-auto: update` özelliğini kullanır. Üretim için, uygun migrasyon yönetimi için Flyway veya Liquibase kullanmayı düşünün.
 
-## 🏗 Project Structure
+## 🏗 Proje Yapısı
 
 ```
 src/
 ├── main/
 │   ├── java/com/lms/
-│   │   ├── annotation/          # Custom annotations
-│   │   ├── aspect/             # AOP aspects for audit logging
-│   │   ├── config/             # Configuration classes
-│   │   ├── controller/         # REST controllers
-│   │   ├── dto/               # Data Transfer Objects
-│   │   ├── entity/            # JPA entities
-│   │   ├── exception/         # Custom exceptions
-│   │   ├── repository/        # Data access layer
-│   │   ├── security/          # Security configuration
-│   │   └── service/           # Business logic
+│   │   ├── annotation/          # Özel açıklamalar
+│   │   ├── aspect/             # Denetim günlüğü için AOP aspect'leri
+│   │   ├── config/             # Yapılandırma sınıfları
+│   │   ├── controller/         # REST controller'ları
+│   │   ├── dto/               # Veri Transfer Nesneleri
+│   │   ├── entity/            # JPA entity'leri
+│   │   ├── exception/         # Özel istisnalar
+│   │   ├── repository/        # Veri erişim katmanı
+│   │   ├── security/          # Güvenlik yapılandırması
+│   │   └── service/           # İş mantığı
 │   └── resources/
-│       ├── application.yml    # Application configuration
-│       └── db/               # Database scripts
+│       ├── application.yml    # Uygulama yapılandırması
+│       └── db/               # Veritabanı scriptleri
 └── test/
     └── java/com/lms/
-        ├── config/            # Test configuration
-        └── service/           # Unit tests
+        ├── config/            # Test yapılandırması
+        └── service/           # Birim testleri
 ```
 
-## 🔐 Security Features
+## 🔐 Güvenlik Özellikleri
 
-### JWT Authentication
-- Secure token-based authentication
-- Configurable token expiration
-- Refresh token mechanism
-- Token blacklisting support
+### JWT Kimlik Doğrulama
+- Güvenli token tabanlı kimlik doğrulama
+- Yapılandırılabilir token süresi
+- Yenileme token mekanizması
+- Token kara liste desteği
 
-### RBAC Implementation
-- **Permissions**: Granular resource-action permissions
-- **Roles**: Collections of permissions
-- **User Roles**: Many-to-many relationship between users and roles
-- **Authorization**: Real-time permission checking
+### RBAC Uygulaması
+- **İzinler**: Granüler kaynak-eylem izinleri
+- **Roller**: İzinlerin koleksiyonları
+- **Kullanıcı Rolleri**: Kullanıcılar ve roller arasında çoktan çoğa ilişki
+- **Yetkilendirme**: Gerçek zamanlı izin kontrolü
 
-### Rate Limiting
-- **Email-based**: Limits login attempts per email
-- **IP-based**: Additional protection against attacks
-- **Configurable**: Adjustable limits and time windows
-- **Monitoring**: Comprehensive attempt tracking
+### Hız Sınırlama
+- **E-posta Tabanlı**: E-posta başına giriş denemesi limitleri
+- **IP Tabanlı**: Saldırılara karşı ek koruma
+- **Yapılandırılabilir**: Ayarlanabilir limitler ve zaman pencereleri
+- **İzleme**: Kapsamlı deneme takibi
 
-### Audit Logging
-- **Automatic Logging**: AOP-based method interception
-- **Rich Context**: IP, user agent, timestamps, operation details
-- **Performance Tracking**: Method execution times
-- **Flexible Queries**: Multiple search and filter options
+### Denetim Günlüğü
+- **Otomatik Günlükleme**: AOP tabanlı metod kesme
+- **Zengin Bağlam**: IP, kullanıcı ajanı, zaman damgaları, işlem detayları
+- **Performans Takibi**: Metod yürütme süreleri
+- **Esnek Sorgular**: Çoklu arama ve filtre seçenekleri
 
-## 📊 Monitoring & Observability
+## 📊 İzleme ve Gözlem
 
-### Health Checks
-- Database connectivity
-- Redis connectivity
-- Application status
+### Sağlık Kontrolleri
+- Veritabanı bağlantısı
+- Redis bağlantısı
+- Uygulama durumu
 
-### Metrics
-- Request/response times
-- Error rates
-- Rate limiting statistics
-- Audit log volumes
+### Metrikler
+- İstek/yanıt süreleri
+- Hata oranları
+- Hız sınırlama istatistikleri
+- Denetim günlüğü hacimleri
 
-### Logging
-- Structured logging with JSON format
-- Audit trail for all operations
-- Security event logging
-- Performance monitoring
+### Günlükleme
+- JSON formatında yapılandırılmış günlükleme
+- Tüm işlemler için denetim izi
+- Güvenlik olayı günlükleme
+- Performans izleme
 
-## 🚀 Deployment
+## 🚀 Dağıtım
 
-### Docker Deployment
+### Docker Dağıtımı
 ```bash
-# Build image
+# Görüntü oluştur
 docker build -t lms-backend .
 
-# Run container
+# Konteyner çalıştır
 docker run -p 8080:8080 lms-backend
 ```
 
 ### Docker Compose
 ```bash
-# Start all services
+# Tüm servisleri başlat
 docker-compose up -d
 
-# View logs
+# Günlükleri görüntüle
 docker-compose logs -f lms-backend
 ```
 
-### Production Considerations
-- Use external PostgreSQL and Redis instances
-- Configure proper JWT secrets
-- Set up monitoring and alerting
-- Implement proper backup strategies
-- Use HTTPS in production
-- Configure rate limiting appropriately
+### Üretim Hususları
+- Harici PostgreSQL ve Redis örnekleri kullanın
+- Uygun JWT gizli anahtarlarını yapılandırın
+- İzleme ve uyarı sistemleri kurun
+- Uygun yedekleme stratejileri uygulayın
+- Üretimde HTTPS kullanın
+- Hız sınırlamayı uygun şekilde yapılandırın
 
-## 🤝 Contributing
+## 🤝 Katkıda Bulunma
 
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
+1. Depoyu fork edin
+2. Özellik dalı oluşturun (`git checkout -b feature/amazing-feature`)
+3. Değişikliklerinizi commit edin (`git commit -m 'Add amazing feature'`)
+4. Dalı push edin (`git push origin feature/amazing-feature`)
+5. Pull Request açın
 
-## 📝 License
+## 📝 Lisans
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+Bu proje MIT Lisansı altında lisanslanmıştır - detaylar için [LICENSE](LICENSE) dosyasına bakın.
 
-## 🆘 Support
+## 🆘 Destek
 
-For support and questions:
-- Create an issue in the repository
-- Contact the development team
-- Check the documentation
+Destek ve sorular için:
+- Depoda bir issue oluşturun
+- Geliştirme ekibiyle iletişime geçin
+- Dokümantasyonu kontrol edin
 
-## 🔄 Version History
+## 🔄 Sürüm Geçmişi
 
 ### v1.0.0
-- Initial release with core LMS functionality
-- JWT authentication
-- Basic user and organization management
-- Classroom and course management
+- Temel LMS işlevselliği ile ilk sürüm
+- JWT kimlik doğrulama
+- Temel kullanıcı ve organizasyon yönetimi
+- Sınıf ve kurs yönetimi
 
 ### v1.1.0
-- Advanced RBAC system
-- Comprehensive audit logging
-- Login attempt throttling
-- Enhanced security features
-- 80%+ unit test coverage
-- Postman collection
+- Gelişmiş RBAC sistemi
+- Kapsamlı denetim günlüğü
+- Giriş denemesi kısıtlama
+- Gelişmiş güvenlik özellikleri
+- %80+ birim test kapsamı
+- Postman koleksiyonu
 
 ---
 
-**Note**: This is a production-ready LMS backend with enterprise-grade security features. Make sure to review and customize the configuration according to your specific requirements.
-#   l m s - b a c k e n d  
- 
+**Not**: Bu, kurumsal düzeyde güvenlik özellikleri ile üretim hazırı bir LMS backend'idir. Yapılandırmayı belirli gereksinimlerinize göre gözden geçirdiğinizden ve özelleştirdiğinizden emin olun.
