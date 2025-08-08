@@ -65,13 +65,13 @@ Spring Boot ile geliştirilmiş, gelişmiş RBAC (Rol Tabanlı Erişim Kontrolü
 - Maven 3.6+
 - PostgreSQL 12+
 - Redis 6+
-- Docker (isteğe bağlı)
+- Docker
 
 ## 🚀 Hızlı Başlangıç
 
 ### 1. Depoyu Klonlayın
 ```bash
-git clone <repository-url>
+git clone [<repository-url>](https://github.com/ozcanhakn/lms-backend)
 cd lms-backend
 ```
 
